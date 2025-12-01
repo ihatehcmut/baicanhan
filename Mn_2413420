@@ -221,8 +221,7 @@ convert_int_loop:
     addi    $s2, $s2, 1
     bnez    $s1, convert_int_loop
 
-    # [MOI] --- PADDING ZERO ---
-    # Kiem tra do dai hien tai. Neu < 3 thi them '0'
+# Kiem tra do dai hien tai. Neu < 3 thi them '0'
 pad_loop:
     sub     $t7, $s2, $s4       # t7 = do dai hien tai (con tro hien tai - diem dau)
     bge     $t7, 3, pad_done    # Neu da du 3 chu so (hoac hon) thi thoi
