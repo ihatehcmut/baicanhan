@@ -100,7 +100,7 @@ main:
     li   $a2, 21
     syscall
 
-    # Convert n=3
+    # Convert n = 3
     mov.s $f12, $f2
     li   $a0, 3
     jal  convert_float
@@ -148,7 +148,7 @@ main:
     li   $a2, 21
     syscall
 
-    # Convert n=4
+    # Convert n = 4
     mov.s $f12, $f2
     li   $a0, 4
     jal  convert_float
@@ -279,7 +279,7 @@ pow_done:
     trunc.w.s $f3, $f3
     mfc1    $s1, $f3      
 
-    # In tung chu so thap phan: chi cho 10^(n - 1), 10^(n - 2)...
+    # In tung chu so thap phan: chia cho 10^(n - 1), 10^(n - 2)...
     li      $t3, 10
     li      $t4, 1                # t4: So chia
     addi    $t5, $s0, -1  
